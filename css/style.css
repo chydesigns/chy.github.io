@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.7;
+    color: black;
+}
+
+.header-content__row, .project-intro__row, .project-grid__row {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content, .header-content, .project-intro__content, .project-grid__content {
+    padding: 0 40px;
+    width: 100%;
+}
+
+.header-content__row {
+    background-color: pink;
+}
+
+.nav-container {
+    background-color: white;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+nav {
+    width: 25%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.hamburger-container {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger-container {
+        display: none;
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-intro__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zen {
+    background-color: white;
+}
+
+.lihti {
+    background-color: lightyellow;
+}
+
+.classhook {
+    background-color: lightblue;
+}
+
+/* Use css grid instead, make a 2 by 3 grid (6 items) */
+.project-grid__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: lightblue;
+    text-align: center;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .sticky nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+} */
